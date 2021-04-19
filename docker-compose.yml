@@ -5,7 +5,8 @@ services:
       context: ./nginx/
     network_mode: host
     environment:
-      ENABLE: "true"
+      ENABLE: "$BLOCK_CLICKJACKING"
       PORT: 8044
       LIFT_UI: localhost:9044
+      TARGET_URL: http://localhost:8044
 

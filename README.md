@@ -1,4 +1,26 @@
-- add nginx reverse proxy and add the headers
-- npm run start
-- create an html example to load lift-web
-- set up azure to test locally
+# Clickingjacking Header Injector
+This repo contains an nginx proxy to add headers to all responses from the upstream server to testing clickjacking.
+
+# Required Software
+- docker
+- docker-compose
+- bash
+- GNU make
+
+# Instructions
+## 1. Start the upstream service on port 9044
+
+## 2. Start the clickjack proxy server
+To start with clickjacking defence disabled, run:
+```
+make run-without-guard
+```
+
+To start with clickjacking defence ENABLED, run:
+```
+make run-with-guard
+```
+
+## 3. Test
+Visit http://localhost:8044/test/clickjacking.html
+

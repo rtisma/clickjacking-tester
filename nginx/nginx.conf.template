@@ -24,5 +24,10 @@ http {
 			}
         }
 
+		location /test {
+			default_type "text/html";
+			alias /usr/share/nginx/html/;
+		}
+
     }
 }
