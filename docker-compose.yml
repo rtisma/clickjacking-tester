@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx:
+    build:
+      context: ./nginx/
+    network_mode: host
+    environment:
+      ENABLE: "true"
+      PORT: 8044
+      LIFT_UI: localhost:9044
+

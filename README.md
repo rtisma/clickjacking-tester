@@ -1,0 +1,4 @@
+- add nginx reverse proxy and add the headers
+- npm run start
+- create an html example to load lift-web
+- set up azure to test locally
